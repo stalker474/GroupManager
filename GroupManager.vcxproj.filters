@@ -13,21 +13,129 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="PathFinder">
+      <UniqueIdentifier>{81e07d41-c91b-4dbd-bc7a-e5ea27d66062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b0ca8a86-eae6-4a6c-95f3-4b408a333ec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupManager">
+      <UniqueIdentifier>{2ef6978a-42d6-4a97-a57b-b72cdf1f74be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Engine">
+      <UniqueIdentifier>{a92b2b96-d658-4a19-9818-af1be95e5c2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\dependencies\PathFinder\src\AStar.h">
+      <Filter>PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\PathFinder\src\Dijkstra.h">
+      <Filter>PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\PathFinder\src\Node.h">
+      <Filter>PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\PathFinder\src\PathAlgorithm.h">
+      <Filter>PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\PathFinder\src\PathFinder.h">
+      <Filter>PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupUnitInterface.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupInterface.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Game\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Formation.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FormationStateMachine.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FormationSlot.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupManagerExceptions.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Group.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamInterface.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>GroupManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Squad.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="..\dependencies\PathFinder\src\AStar.cpp">
+      <Filter>PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\PathFinder\src\Dijkstra.cpp">
+      <Filter>PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\PathFinder\src\Node.cpp">
+      <Filter>PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="GroupManager.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Game\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Formation.cpp">
+      <Filter>GroupManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FormationStateMachine.cpp">
+      <Filter>GroupManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FormationSlot.cpp">
+      <Filter>GroupManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Group.cpp">
+      <Filter>GroupManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Squad.cpp">
+      <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
