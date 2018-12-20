@@ -37,6 +37,13 @@ namespace GroupManager
 			return Slots.back();
 		}
 		void UpdatePosition(const Vector2d NewPosition, const Vector2d Orientation);
+		inline const shared_ptr<FormationSlot> GetSlot(const size_t Index) const {
+			if (Index >= Slots.size())
+				throw Exceptions::GroupManagerBaseException("Index out of bounds!");
+			else {
+				return Slots[Index];
+			}
+		}
 		
 		const ETeam GetTeamStatus() const noexcept override
 		{

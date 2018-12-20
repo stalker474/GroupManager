@@ -19,6 +19,8 @@ namespace GroupManager
 		inline shared_ptr<GroupManager::FormationStateMachine> GetFSM() const noexcept { return FSM; }
 
 		const ETeam GetTeamStatus() const noexcept override { return Team; }
+		inline const Vector2d GetPosition() const { return Position; }
+		inline const Vector2d GetOrientation() const { return Orientation; }
 	private:
 		shared_ptr<GroupManager::FormationStateMachine> FSM;
 		ETeam Team;

@@ -54,6 +54,8 @@ void Squad::AddUnits(size_t Count)
 
 		auto unit = make_shared<TestGame::Unit>(size, GetTeam());
 		formation->AcceptUnit(unit);
+		//place the unit at the slot
+		Group->UpdatePosition(Group->GetPosition(), Group->GetOrientation());
 		Units.push_back(unit);
 	}
 }
